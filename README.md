@@ -4,6 +4,7 @@ dotFiles and Config Backups of linux
 inspired from 
 https://atlassian.com/git/tutorials/dotfiles
 
+
 ## prepare git repo
 ------------------------------------
 ```
@@ -13,6 +14,14 @@ config config --local status.showUntrackedFiles no
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
 ```
 ------------------------------------
+
+## Prepare the Git connection
+---------------------------------------
+
+```
+config remote add origin git@github.com:atalaymurat/config.git
+config push --set-upstream origin main
+```
 
 ### add files to git repo
 ------------------------------------
