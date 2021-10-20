@@ -58,16 +58,16 @@ xargs -I{} mv {} .config-backup/{}
 config checkout
 ```
 You're done, from now on you can now type config commands to add and update your dotfiles:
-
+```
 config status
 config add .vimrc
 config commit -m "Add vimrc"
 config add .bashrc
 config commit -m "Add bashrc"
 config push
-
+```
 -----------------------------------------------
-Again as a shortcut not to have to remember all these steps on any new machine you want to setup, you can create a simple script
+##Again as a shortcut not to have to remember all these steps on any new machine you want to setup, you can create a simple script
 
 ```
 git clone --bare https://bitbucket.org/durdn/cfg.git $HOME/.cfg
