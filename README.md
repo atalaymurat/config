@@ -67,10 +67,11 @@ config commit -m "Add bashrc"
 config push
 ```
 -----------------------------------------------
-##Again as a shortcut not to have to remember all these steps on any new machine you want to setup, you can create a simple script
+## Again as a shortcut not to have to remember all these steps on any new machine you want to setup, you can create a simple script
+Change git Url to your login Url 
 
 ```
-git clone --bare https://bitbucket.org/durdn/cfg.git $HOME/.cfg
+git clone --bare git@github.com:atalaymurat.git $HOME/.cfg
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
