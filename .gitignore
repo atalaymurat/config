@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+
+
+# Not these files
+!.gitignore
+!.README.md
+!.zshrc
+!.bashrc
+!.Xresources
+!.vimrc
+!.config/alacritty
+!.config/awesome
+

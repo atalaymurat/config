@@ -32,8 +32,14 @@ config push
 ### add alias to zshrc or bashrc
 ```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-echo ".cfg" >> .gitignore
+```
+prepare your gitignore file not to track .cfg folder
 
+```
+echo ".cfg" >> .gitignore
+```
+
+```
 git clone --bare git@github.com:atalaymurat/config.git $HOME/.cfg
 
 checkout the actual content
