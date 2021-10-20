@@ -54,3 +54,5 @@ neofetch
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias config='/usr/bin/git --git-dir=/home/mata/.cfg/ --work-tree=/home/mata'
+
+#End
