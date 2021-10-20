@@ -51,4 +51,6 @@ neofetch
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 #Autoconnect Bluetooth device
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 alias config='/usr/bin/git --git-dir=/home/mata/.cfg/ --work-tree=/home/mata'
