@@ -6,20 +6,25 @@ https://atlassian.com/git/tutorials/dotfiles
 
 ## prepare git repo
 ------------------------------------
+```
 git init --bare $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+```
 ------------------------------------
 
 ### add files to git repo
 ------------------------------------
+```
 config status
 config add .vimrc
 config commit -m "Add vimrc"
 config add .bashrc
 config commit -m "Add bashrc"
 config push
+
+```
 ------------------------------------
 
 ## Install your dotfiles onto a new system (or migrate to this setup)
