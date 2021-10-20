@@ -1,0 +1,8 @@
+! surface pro 3 screen 216 ppi 2160x1440 px 24 bit
+Xft.dpi: 216
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.rgba: rgb
