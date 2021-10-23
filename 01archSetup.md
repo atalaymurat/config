@@ -1,23 +1,26 @@
-
-# pacman
+# My Steps To Configure Surface Pro 3 Arco linux B - awesome wm edition
+## pacman
 - pacman -S  <package name> => install a pack 
 - pacman -Ss <package name> => search a pack on rep
 - pacman -Q  <package name> => search installed pack
 - pacman -Sy 		  => update rep database
 ---------------------------------------
 ## To change icons and themes
-run lxappearance 
+- run lxappearance 
 ---------------------------------------
 ## change kernel to lts
+```
 pacman -S linux-lts
-update-grub
+update-grub 
 reboot
+```
+- update-grub is a alias in arcolinux to update the grub
 ---------------------------------------
 ## Dont update Kernel pacman
-sudo vim /etc/pacman.conf
-uncomment IgnorePkg = linux
+- sudo vim /etc/pacman.conf
+- uncomment IgnorePkg = linux
 ---------------------------------------
-## Timeshift auto snapshots 
+## Timeshift auto snapshots  (btrfs file system)
 pacman -S timeshift grub-btrfs timeshift-autosnap
 complete timeshift wizard 
 sudo systemctl enable grub-btrfs.path
@@ -25,7 +28,7 @@ sudo systemctl start grub-btrfs.service
 
 now you have snapshots on grub loader screen as an option
 ---------------------------------------
-## SSH Keys
+## SSH Keys setup
 ```
 ssh-keygen -t ed25519
 ```
@@ -96,8 +99,8 @@ export LIBVA_DRIVER_NAME=i965
 export VDPAU_DRIVER=va_gl
 ```
 hardware video acceleration from arch wiki
-pacman -S vdpauinfo
 ```
+pacman -S vdpauinfo
 vdpauinfo
 ```
 can not find libvdpau-va-gl error
